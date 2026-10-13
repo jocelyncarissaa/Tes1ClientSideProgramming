@@ -1,0 +1,35 @@
+:root {
+  --ink: #292529;
+  --body: #595459;
+  --garis: #dddddd;
+  --batas-input: #999999;
+  --aksen: #74263d;
+  --aksen-hover: #591b2e;
+  --aksen-lembut: #f5e6eb;
+  --garis-kartu: #d8b6c0;
+  --sukses: #315d49;
+  --bahaya: #a1263e;
+  --bahaya-hover: #7f1930;
+  --nonaktif: #eeeeee;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: white; color: var(--body); line-height: 1.5; }
+h1, h2, h3 { color: var(--ink); line-height: 1.3; margin: 0; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+button {
+  font: inherit;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 8px 12px;
+  color: var(--aksen);
+  background: white;
+  border: 1px solid var(--aksen);
+  border-radius: 5px;
+}
+button:hover:not(:disabled) { color: white; background: var(--aksen); }
+button:disabled { color: var(--body); background: var(--nonaktif); border-color: var(--batas-input); cursor: not-allowed; }
+button:focus-visible { outline: 2px solid var(--aksen); outline-offset: 3px; }
+input, select { font: inherit; }
